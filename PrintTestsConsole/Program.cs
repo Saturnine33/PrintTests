@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrintTests.Business;
+using System;
 
 namespace PrintTestsConsole
 {
@@ -6,7 +7,7 @@ namespace PrintTestsConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PrintMethods.PrintMethod1();
         }
     }
 }
