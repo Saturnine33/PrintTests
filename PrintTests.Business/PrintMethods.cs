@@ -92,5 +92,30 @@ namespace PrintTests.Business
             }
         }
 
+        public static void PrintMethodInnerLoop()
+        {
+            string[] variableArray;
+            List<int> inclusionArray;
+
+            variableArray = new string[5];
+            inclusionArray = new List<int> { 0, 2 };
+
+            for (int outerCounter = 0; outerCounter < variableArray.Length; outerCounter++)
+            {
+                variableArray[outerCounter] = "missing";
+                for (int innerCounter = 0; innerCounter < inclusionArray.Count; innerCounter++)
+                {
+                    if (inclusionArray[innerCounter] == outerCounter)
+                    {
+                        variableArray[outerCounter] = "Include " + outerCounter.ToString();
+                    }
+                }
+            }
+
+            for (int i = 0; i < variableArray.Length; i++)
+            {
+                WriteLine(variableArray[i]);
+            }
+        }
     }
 }
