@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PrintTests.Business
 {
@@ -61,5 +63,34 @@ namespace PrintTests.Business
                 WriteLine(variable1);
             }
         }
+
+        public static void PrintMethodArrayIf()
+        {
+            string[] variableArray;
+            List<int> exclusionIndex = new List<int>();
+
+            exclusionIndex.Add(2);
+            exclusionIndex.Add(3);
+
+            variableArray = new string[5];
+
+            for (int i = 0; i < variableArray.Length; i++)
+            {
+                if (exclusionIndex.Contains(i))
+                {
+                    variableArray[i] = "Exclude " + i.ToString();
+                }
+                else
+                {
+                    variableArray[i] = "Include " + i.ToString();
+                }
+            }
+
+            for (int i = 0; i < variableArray.Length; i++)
+            {
+                WriteLine(variableArray[i]);
+            }
+        }
+
     }
 }

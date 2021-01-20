@@ -6,7 +6,7 @@ namespace PrintTestsConsole
     {
         static void Main(string[] args)
         {
-            PrintTests.Business.PrintMethods.PrintMethodFor();
+            PrintTests.Business.PrintMethods.PrintMethodArrayIf();
         }
     }
 }
