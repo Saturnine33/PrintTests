@@ -1,5 +1,6 @@
 using PrintTests.Business;
 using PrintTests.Business.Infrastructure;
+using System.Text;
 
 namespace PrintTestsxTests
 {
@@ -15,10 +16,23 @@ namespace PrintTestsxTests
         }
 
         [Fact]
-        public void Test1()
+        public void PrintHelloWorldTest()
         {
             MyPrinterInstance.PrintHelloWorld();
             Assert.Equal("Hello World", printer.BuilderInstance.ToString());
+        }
+
+
+        [Fact]
+        public void PrintHelloWorldTimes3Test()
+        {
+            var expectedResult = @"Hello World
+Hello World
+Hello World
+";
+
+            MyPrinterInstance.PrintHelloWorldTimes3();
+            Assert.Equal(expectedResult, printer.BuilderInstance.ToString());
         }
     }
 }

@@ -17,5 +17,10 @@ namespace PrintTests.Business
         {
             PrintTarget.Print("Hello World");
         }
+
+        public void PrintHelloWorldTimes3()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
