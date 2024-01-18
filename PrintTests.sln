@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintTestsConsole", "PrintTestsConsole\PrintTestsConsole.csproj", "{AF121DC0-11A8-4F0A-9715-3702078B6582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintTests.Business", "PrintTests.Business\PrintTests.Business.csproj", "{2D4248B4-6057-49E3-81EA-54FDC1B1A12A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintTests.Business", "PrintTests.Business\PrintTests.Business.csproj", "{2D4248B4-6057-49E3-81EA-54FDC1B1A12A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintTestsxTests", "PrintTestsxTests\PrintTestsxTests.csproj", "{428BBF1E-878D-49DE-97A5-4845E7489BAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{2D4248B4-6057-49E3-81EA-54FDC1B1A12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D4248B4-6057-49E3-81EA-54FDC1B1A12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D4248B4-6057-49E3-81EA-54FDC1B1A12A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428BBF1E-878D-49DE-97A5-4845E7489BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428BBF1E-878D-49DE-97A5-4845E7489BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428BBF1E-878D-49DE-97A5-4845E7489BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428BBF1E-878D-49DE-97A5-4845E7489BAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
