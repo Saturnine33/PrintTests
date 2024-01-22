@@ -22,5 +22,10 @@ namespace PrintTests.Business
         {
             throw new NotImplementedException();
         }
+
+        public void PrintNumberMessages(int firstNumber, int lastNumber)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
